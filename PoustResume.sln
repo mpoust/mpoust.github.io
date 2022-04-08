@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoustResume", "source\PoustResume\PoustResume.csproj", "{2786CAF4-2108-4C34-9057-AC984326B31E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoustResume", "source\PoustResume\PoustResume.csproj", "{2786CAF4-2108-4C34-9057-AC984326B31E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{2C81D546-09FC-4204-BCC9-68C599BDE5E8}"
 EndProject
@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-items", "solution-
 	ProjectSection(SolutionItems) = preProject
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
+		nuget.config = nuget.config
 		README.md = README.md
 	EndProjectSection
 EndProject
