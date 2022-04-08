@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoustResume", "PoustResume\PoustResume.csproj", "{2786CAF4-2108-4C34-9057-AC984326B31E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoustResume", "source\PoustResume\PoustResume.csproj", "{2786CAF4-2108-4C34-9057-AC984326B31E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{2C81D546-09FC-4204-BCC9-68C599BDE5E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-items", "solution-items", "{CE491026-1B86-44FE-A6B2-0015412F464D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{64AB6EDB-7860-4074-9AD4-EBB6303217E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +28,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2786CAF4-2108-4C34-9057-AC984326B31E} = {2C81D546-09FC-4204-BCC9-68C599BDE5E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0420B451-BD66-4CF1-9350-19769F73920B}
