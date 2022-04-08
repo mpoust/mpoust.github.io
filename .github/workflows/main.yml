@@ -29,3 +29,6 @@ jobs:
     # changes the base-tag in index.html from '/' to 'PoustResume' to match GitHub Pages repository subdirectory
     - name: Change base-tag in index.html from / to PoustResume
       run: sed -i 's/<base href="\/" \/>/<base href="\/PoustResume\/" \/>/g' release/wwwroot/index.html
+    # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
+    - name: Add .nojekyll file
+      run: touch release/wwwroot/.nojekyll
