@@ -1,0 +1,18 @@
+﻿@*
+    Mobile Layout for displaying content for a medium-small screens. Primarily intended for Table / Mobile devices
+
+    Rendered in App.razor based on TelerikMediaQuery results from DeviceMediaQueryComponent.razor
+*@
+
+@layout TelerikLayout
+
+@inherits LayoutComponentBase
+
+<div class="main">
+    <NavDrawer/>
+    @* NavDrawer will be deleted because its a drawer component with @Body required *@
+
+    <div class="px-4">
+        @Body
+    </div>
+</div>

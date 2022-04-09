@@ -1,0 +1,25 @@
+﻿@inject NavigationManager NavManager
+
+<TelerikGridLayout HorizontalAlign="GridLayoutHorizontalAlign.Center">
+    <GridLayoutColumns>
+        <GridLayoutColumn Width="100%"></GridLayoutColumn>
+    </GridLayoutColumns>
+    <GridLayoutRows>
+    </GridLayoutRows>
+    <GridLayoutItems>
+        <GridLayoutItem>
+            <img src="img/404-graphic-LARGE.png" alt="404 Graphic" class="responsive-image" />
+        </GridLayoutItem>
+        <GridLayoutItem>
+            <TelerikTooltip TargetSelector="a[title]" Position="TooltipPosition.Bottom"></TelerikTooltip>
+            <div class="not-found-ref">
+                <a href="https://www.freepik.com/vectors/unavailable" title="Unavailable vector created by pikisuperstar - www.freepik.com">
+                    <img src="img/designed-by-freepik.png" alt="Unavailable vector created by pikisuperstar - www.freepik.com" />
+                </a>
+            </div>
+        </GridLayoutItem>
+        <GridLayoutItem>
+            <TelerikButton Rounded="full" Class="not-found-btn" OnClick="NavigateHome">Home</TelerikButton>
+        </GridLayoutItem>
+    </GridLayoutItems>
+</TelerikGridLayout>

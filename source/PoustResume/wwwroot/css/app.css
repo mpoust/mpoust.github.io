@@ -1,6 +1,10 @@
-﻿@import url("../../Styles/open-iconic/font/css/open-iconic-bootstrap.min.css");
+﻿/*
+    Default Styles from starting Blazor WASM Template
+*/
+/*@import url('../../Styles/open-iconic/font/css/open-iconic-bootstrap.min.css');*/
 html, body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
 }
 
 h1:focus {

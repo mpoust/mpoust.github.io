@@ -6,5 +6,13 @@
   {
     "outputFile": "wwwroot/css/animations.css",
     "inputFile": "Styles/animations.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/main.css",
+    "inputFile": "Styles/main.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/base.css",
+    "inputFile": "Styles/base.scss"
   }
 ]

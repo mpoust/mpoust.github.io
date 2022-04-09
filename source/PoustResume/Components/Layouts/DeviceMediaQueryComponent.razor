@@ -1,0 +1,13 @@
+﻿@*
+    This component assists with providing the device layout state throughout 
+    the entire application. Set in App.razor then accessible through the DeviceState
+    helper class.
+
+    Sets the injectable DeviceState to the current state based on the MediaQuery. 
+
+    See: https://demos.telerik.com/blazor-ui/mediaquery/overview for documentation and additional details
+*@
+
+@inject DeviceState DeviceState
+
+<TelerikMediaQuery Media="(min-width: 769px)" OnChange="((changed) => DeviceState.SetDeviceState(changed))"></TelerikMediaQuery>

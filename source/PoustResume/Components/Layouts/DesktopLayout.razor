@@ -1,0 +1,17 @@
+﻿@*
+    Desktop Layout for displaying content for a large screen.
+
+    Rendered in App.razor based on TelerikMediaQuery results from DeviceMediaQueryComponent.razor
+*@
+
+@layout TelerikLayout
+
+@inherits LayoutComponentBase
+
+<div class="main">
+    <NavMenu/>
+
+    <div class="desktop-content px-4">
+        @Body
+    </div>
+</div>

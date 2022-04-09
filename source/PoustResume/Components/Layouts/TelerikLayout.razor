@@ -1,4 +1,12 @@
-﻿@inherits LayoutComponentBase
+﻿@*
+    Required so all other layouts can set this as their parent layout. 
+
+    Allows for usage of Telerik components throughout the application.
+
+    See: https://docs.telerik.com/blazor-ui/api/Telerik.Blazor.Components.TelerikRootComponent for more
+*@
+
+@inherits LayoutComponentBase
 
 <TelerikRootComponent>
     @Body

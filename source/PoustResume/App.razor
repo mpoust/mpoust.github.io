@@ -1,12 +1,40 @@
-﻿<Router AppAssembly="@typeof(App).Assembly">
+﻿@*
+    App.razor is the entry point into the application and defines the layouts, routing, and behavior for
+    top-level interaction with the application.
+
+    Telerik MediaQuery to handle layouts based on screen size. Supporting one layout for table/mobile and
+    one layout for desktop. Captures Desktop min-width and renders tablet/mobile view for anything smaller
+
+    It is the responsibility of the individual components to be designed with responsiveness in mind. This layout
+    adjustment is purely for the navigation and component container layout adjustments only.
+
+    See: https://demos.telerik.com/blazor-ui/mediaquery/overview for documentation and additional details
+
+    MediaQuery is encapsulated in the DeviceMediaQueryComponent, that provides a subscribable DeviceState that can be accessed
+    in any component throughout the entire application.
+*@
+
+@implements IDisposable
+
+@inject DeviceState DeviceState
+
+<DeviceMediaQueryComponent/>
+
+<Router AppAssembly="@typeof(App).Assembly">
     <Found Context="routeData">
-        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
-        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+        @if (DeviceState.GetDeviceState())
+        {
+            <RouteView RouteData="@routeData" DefaultLayout="@typeof(DesktopLayout)" />
+        }
+        else
+        {
+            <RouteView RouteData="@routeData" DefaultLayout="@typeof(MobileLayout)" />
+        }
     </Found>
     <NotFound>
         <PageTitle>Not found</PageTitle>
-        <LayoutView Layout="@typeof(MainLayout)">
-            <p role="alert">Sorry, there's nothing at this address.</p>
+        <LayoutView Layout="@typeof(NotFoundLayout)">
+            <NotFoundComponent/>
         </LayoutView>
     </NotFound>
 </Router>
