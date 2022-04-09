@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>PoustResume</title>
+    <title>mpoust.dev</title>
     <base href="/" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/main.min.css" rel="stylesheet" />
     <link href="css/app.min.css" rel="stylesheet" />
     <link href="css/animations.min.css" rel="stylesheet" />
     <link href="PoustResume.styles.css" rel="stylesheet" />
@@ -15,93 +16,18 @@
 
 <body>
     <div id="app">
-        <!-- Cube animation. ref: https://codepen.io/jh3y/pen/abNveXb -->
-        <div class="loader-container">
-            <div class="scene">
-                <div class="plane">
-                    <div class="cube cube--0">
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                    </div>
-                    <div class="shadow shadow--0"></div>
-                    <div class="cube cube--1">
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                    </div>
-                    <div class="shadow shadow--1"></div>
-                    <div class="cube cube--2">
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                    </div>
-                    <div class="shadow shadow--2"></div>
-                    <div class="cube cube--3">
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                    </div>
-                    <div class="shadow shadow--3"></div>
-                    <div class="cube cube--4">
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                    </div>
-                    <div class="shadow shadow--4"></div>
-                    <div class="cube cube--5">
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                    </div>
-                    <div class="shadow shadow--5"></div>
-                    <div class="cube cube--6">
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                    </div>
-                    <div class="shadow shadow--6"></div>
-                    <div class="cube cube--7">
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                        <div class="cube__side"></div>
-                    </div>
-                    <div class="shadow shadow--7"></div>
-                </div>
-            </div>
-        </div>
+        <!-- Custom HTML Component - custom-components.js -->
+        <loader-animation></loader-animation>
+    </div>
 
-        <div id="blazor-error-ui">
-            An unhandled error has occurred.
-            <a href="" class="reload">Reload</a>
-            <a class="dismiss">🗙</a>
-        </div>
-        <script src="_framework/blazor.webassembly.js"></script>
-        <script src="https://blazor.cdn.telerik.com/blazor/3.1.0/telerik-blazor.min.js" defer></script>
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="https://blazor.cdn.telerik.com/blazor/3.1.0/telerik-blazor.min.js" defer></script>
+    <script src="scripts/custom-components.js"></script>
 </body>
 
 </html>
