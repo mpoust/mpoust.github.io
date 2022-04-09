@@ -2,6 +2,8 @@
     Custom Styles added to PoustResume Blazor WASM
 */
 
+//  NOTE: Inline comments are stripped in the compiled and minified file in wwwroot/css
+
 @import 'base.scss';
 
 .responsive-image{
@@ -34,6 +36,9 @@
     margin-left: 1rem;
 }
 
+//
+// Navigation Bar
+//
 .sticky-nav {
     flex: 1;
     clear: both;
@@ -64,4 +69,59 @@
     margin-left: 2.5rem;
     max-height: 3.5rem;
     margin-top: .25rem;
+}
+
+//
+// Navigation Chips ref: https://codepen.io/debabrata100/pen/pOLyPW
+//
+.nav-chip {
+    display: inline-flex;
+    flex-direction: row;
+    background-color: $secondary-grey;
+    border: none;
+    height: 36px;
+    outline: none;
+    padding-right: 20px;
+    font-size: 14px;
+    color: #ffffff;
+    // font color?
+    white-space: nowrap;
+    align-items: center;
+    border-radius: 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: .4rem;
+}
+
+.nav-chip-head{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    background-color: $app-primary;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    align-items: center;
+    // user-select
+    border-radius: 50%;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.nav-chip-content{
+    cursor: inherit;
+    display: flex;
+    align-items: center;
+    // user-select
+    white-space: nowrap;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.k-menu-group{
+    background-color: transparent;
 }

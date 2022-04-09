@@ -8,11 +8,19 @@
         <TelerikMenu Data="@MenuItems">
             <ItemTemplate Context="item">
                 @{
-                    <NavLink href="@item.Url"
-                         target="@(item.IsInternalPage(item.Url) ? "" : "_blank")"
-                         Match="@(item.Url == "/" ? NavLinkMatch.All : NavLinkMatch.Prefix)">
-                        @item.Text
-                    </NavLink>
+                    <div class="nav-chip">
+                        <div class="nav-chip-head">
+                            <!-- TODO: Telerik Icon -->
+                            A
+                        </div>
+                        <div class="nav-chip-body">
+                            <NavLink href="@item.Url"
+                                 target="@(item.IsInternalPage(item.Url) ? "" : "_blank")"
+                                 Match="@(item.Url == "/" ? NavLinkMatch.All : NavLinkMatch.Prefix)">
+                                @item.Text
+                            </NavLink>
+                        </div>
+                    </div>
                 }
             </ItemTemplate>
         </TelerikMenu>

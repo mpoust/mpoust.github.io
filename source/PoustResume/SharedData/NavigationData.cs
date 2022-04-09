@@ -28,9 +28,24 @@ public class NavigationData
             },
             new MenuItemModel()
             {
+                Text = "Have an Idea?",
+                Url = "/contracting"
+            },
+            new MenuItemModel()
+            {
                 Text = "Contact",
                 Items = new List<MenuItemModel>()
                 {
+                    new MenuItemModel()
+                    {
+                        Text = "About Michael",
+                        Url = "/about-me"
+                    },
+                    new MenuItemModel()
+                    {
+                        Text = "Independent Contracting",
+                        Url = "/contracting"
+                    },
                     new MenuItemModel()
                     {
                         Text = "LinkedIn",
@@ -40,11 +55,6 @@ public class NavigationData
                     {
                         Text = "GitHub",
                         Url = "https://github.com/mpoust"
-                    },
-                    new MenuItemModel()
-                    {
-                        Text = "Email",
-                        Url = "mailto:michael.poust221@gmail.com"
                     }
                 }
             },

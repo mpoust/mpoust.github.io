@@ -1,18 +1,23 @@
 ﻿[
   {
     "outputFile": "wwwroot/css/app.css",
-    "inputFile": "Styles/app.scss"
+    "inputFile": "Styles/app.scss",
+    "minify": {
+      "commentMode": "none"
+    }
   },
   {
     "outputFile": "wwwroot/css/animations.css",
-    "inputFile": "Styles/animations.scss"
+    "inputFile": "Styles/animations.scss",
+    "minify": {
+      "commentMode": "none"
+    }
   },
   {
     "outputFile": "wwwroot/css/main.css",
-    "inputFile": "Styles/main.scss"
-  },
-  {
-    "outputFile": "wwwroot/css/base.css",
-    "inputFile": "Styles/base.scss"
+    "inputFile": "Styles/main.scss",
+    "minify": {
+      "commentMode": "none"
+    }
   }
 ]
