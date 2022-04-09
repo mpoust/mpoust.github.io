@@ -20,7 +20,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
 
-    # TODO: 4/8/2022 Replace variables with secrets before nuget restore
+    # replace Telerik Username with secret prior to NuGet Restore
     - name: Replace NuGet Username
       uses: jacobtomlinson/gha-find-replace@v2
       with:
@@ -29,6 +29,7 @@ jobs:
         include: "nuget.config"
         regex: false
 
+    # replace Telerik Password with secret prior to NuGet Restore
     - name: Replace NuGet Password
       uses: jacobtomlinson/gha-find-replace@v2
       with:
@@ -52,9 +53,6 @@ jobs:
     # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
     - name: Add .nojekyll file
       run: touch release/wwwroot/.nojekyll
-
-    # TODO: 4/8/2022 Delete nuget.config after replacing variable before committing to gh-pages branch - might not be needed
-    # variables substituted in working directory only
       
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4.3.0
