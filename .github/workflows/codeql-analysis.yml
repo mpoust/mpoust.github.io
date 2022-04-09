@@ -52,8 +52,8 @@ jobs:
 
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v2
+    #- name: Autobuild
+    #  uses: github/codeql-action/autobuild@v2
 
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 https://git.io/JvXDl
@@ -61,6 +61,30 @@ jobs:
     # ✏️ If the Autobuild fails above, remove it and uncomment the following three lines
     #    and modify them (or add more) to build your code if your project
     #    uses a compiled language
+
+    # replace Telerik Username with secret prior to NuGet Restore
+    - name: Replace NuGet Username
+      uses: jacobtomlinson/gha-find-replace@v2
+      with:
+        find: "$$TELERIK_USERNAME$$"
+        replace: ${{ secrets.TELERIK_USERNAME }}
+        include: "nuget.config"
+        regex: false
+
+    # replace Telerik Password with secret prior to NuGet Restore
+    - name: Replace NuGet Password
+      uses: jacobtomlinson/gha-find-replace@v2
+      with:
+        find: "$$TELERIK_PASSWORD$$"
+        replace: ${{ secrets.TELERIK_PASSWORD }}
+        include: "nuget.config"
+        regex: false
+
+    - name: Build
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '6.0.x'
+    - run: dotnet build PoustResume
 
     #- run: |
     #   make bootstrap
