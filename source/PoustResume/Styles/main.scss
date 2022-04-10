@@ -37,6 +37,12 @@
     margin-right: 1rem;
 }
 
+.mobile-content {
+    padding-top: 4.75rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 //
 // Navigation Bar
 //
@@ -66,14 +72,35 @@
     float: left;
 }
 
-.nav-logo > a > .nav-logo-logo {
-    margin-left: 2.5rem;
-    max-height: 3.5rem;
-    margin-top: .25rem;
+    .nav-logo > a > .nav-logo-logo {
+        margin-left: 2.5rem;
+        max-height: 3.5rem;
+        margin-top: .25rem;
+    }
+
+    .mobile-nav > .nav-logo > a > .nav-logo-logo{
+        margin-top: .08rem;
+    }
+
+.mobile-nav-icon-container .k-icon {
+    color: $app-primary;
+    float: right;
+    margin-right: 2.5rem;
+    margin-top: .7rem;
+    font-size: 36px;
+}
+
+    .mobile-nav-icon-container > span{
+        cursor: pointer;
+    }
+
+.mobile-nav-icons {
+    color: $primary-off-white;
+    font-size: 22px;
 }
 
 //
-// Navigation Chips ref: https://codepen.io/debabrata100/pen/pOLyPW
+// Desktop Navigation Chips ref: https://codepen.io/debabrata100/pen/pOLyPW
 //
 .nav-chip-link {
     color: $app-primary;

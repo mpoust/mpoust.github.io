@@ -11,7 +11,7 @@ public partial class NavMenu
     /// <summary>
     ///     The list of items displayed in the menu bar
     /// </summary>
-    List<MenuItemModel> MenuItems { get; set; }
+    List<MenuItemModel>? MenuItems { get; set; }
 
     /// <summary>
     ///     Component Initialization

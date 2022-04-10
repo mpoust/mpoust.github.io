@@ -31,7 +31,7 @@ public class MenuItemModel
     ///     Sub-List of <see cref="MenuItemModel"/> to display under this
     ///     menu item as a nested list.
     /// </summary>
-    public List<MenuItemModel> Items { get; set; }
+    public List<MenuItemModel>? Items { get; set; }
 
     /// <summary>
     ///     Is this item a separator for sectioning the menu (in a drawer) into 

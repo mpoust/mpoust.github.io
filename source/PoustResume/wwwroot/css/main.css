@@ -32,6 +32,12 @@
   margin-right: 1rem;
 }
 
+.mobile-content {
+  padding-top: 4.75rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .sticky-nav {
   background-color: #424242;
   flex: 1;
@@ -62,6 +68,27 @@
   margin-left: 2.5rem;
   max-height: 3.5rem;
   margin-top: 0.25rem;
+}
+
+.mobile-nav > .nav-logo > a > .nav-logo-logo {
+  margin-top: 0.08rem;
+}
+
+.mobile-nav-icon-container .k-icon {
+  color: #39BCED;
+  float: right;
+  margin-right: 2.5rem;
+  margin-top: 0.7rem;
+  font-size: 36px;
+}
+
+.mobile-nav-icon-container > span {
+  cursor: pointer;
+}
+
+.mobile-nav-icons {
+  color: #FAF9F6;
+  font-size: 22px;
 }
 
 .nav-chip-link {

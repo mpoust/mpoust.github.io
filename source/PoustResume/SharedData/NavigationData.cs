@@ -73,4 +73,33 @@ public class NavigationData
             }
         };
     }
+
+    /// <summary>
+    ///     Flatten Navigation Data and remove specific elements for displaying 
+    ///     in the mobile drawer menu
+    /// </summary>
+    /// <returns></returns>
+    public NavigationData GenerateMobileNavigationData()
+    {
+        var navData = new NavigationData();
+
+        navData.MenuItems.RemoveAll(m => m.Text == "Have an Idea?");
+
+        var subList = (from m in navData.MenuItems
+                     where m.Items != null
+                     select m)
+                     .SelectMany(m => m.Items).ToList();
+
+        var index = navData.MenuItems.FindIndex(m => m.Text == "Contact");
+
+        foreach(var item in subList)
+        {
+            navData.MenuItems.Insert(index, item);
+            index++;
+        }
+
+        navData.MenuItems.RemoveAll(m => m.Text == "Contact");
+
+        return navData;
+    }
 }

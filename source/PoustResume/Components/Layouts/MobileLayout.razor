@@ -8,11 +8,42 @@
 
 @inherits LayoutComponentBase
 
-<div class="main">
-    <NavDrawer/>
-    @* NavDrawer will be deleted because its a drawer component with @Body required *@
+<style>
+    .k-drawer{
+        background-color: #424242 !important;
+    }
 
-    <div class="px-4">
-        @Body
-    </div>
-</div>
+</style>
+
+<TelerikDrawer Data="@MenuItems" Mode="@DrawerMode.Overlay" Position="@DrawerPosition.Right" @ref="@NavDrawerRef">
+    <ItemTemplate Context="item">
+        @{
+            <div class="mobile-nav-icons" title="@item.ToolTip">
+                <TelerikIcon Icon="@item.TelerikIcon" />
+            </div>
+            <NavLink href="@item.Url"
+                 target="@(item.IsInternalPage(item.Url) ? "" : "_blank")"
+                 Match="@(item.Url == "/" ? NavLinkMatch.All : NavLinkMatch.Prefix)">
+                @item.Text
+            </NavLink>
+        }
+    </ItemTemplate>
+    <DrawerContent>
+        <div class="main">
+            <div class="sticky-nav mobile-nav">
+                <div class="nav-logo">
+                    <a href="/"><img src="img/mp-icon.png" alt="Poust Logo" class="nav-logo-logo" /></a>
+                </div>
+                <div class="mobile-nav-icon-container">
+                    <span onclick="@(() => NavDrawerRef.ToggleAsync())">
+                        <TelerikIcon Icon="menu" Class="mobile-nav-icon" />
+                    </span>
+                </div>
+            </div>
+            <div class="mobile-content px-4">
+                @Body
+            </div>
+        </div>
+    </DrawerContent>
+</TelerikDrawer>
+
