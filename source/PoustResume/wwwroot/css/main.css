@@ -27,17 +27,18 @@
 }
 
 .desktop-content {
-  padding-top: 4rem;
+  padding-top: 4.5rem;
   margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .sticky-nav {
+  background-color: #424242;
   flex: 1;
   clear: both;
   overflow: hidden;
   height: 4rem;
   align-items: center;
-  background-color: #424242;
   position: fixed;
   top: 0;
   width: 100%;
@@ -63,30 +64,44 @@
   margin-top: 0.25rem;
 }
 
+.nav-chip-link {
+  color: #39BCED;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 .nav-chip {
+  background-color: #555555;
+  color: #FAF9F6;
   display: inline-flex;
   flex-direction: row;
-  background-color: #555555;
   border: none;
   height: 36px;
   outline: none;
   padding-right: 20px;
   font-size: 14px;
-  color: #ffffff;
   white-space: nowrap;
   align-items: center;
   border-radius: 16px;
   vertical-align: middle;
   text-decoration: none;
   justify-content: center;
-  margin-top: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.nav-chip:hover {
+  background-color: #FAF9F6;
+}
+
+.nav-chip:hover .nav-chip-link {
+  color: #121212;
 }
 
 .nav-chip-head {
+  background-color: #39BCED;
   display: flex;
   position: relative;
   overflow: hidden;
-  background-color: #39BCED;
   font-size: 1.25rem;
   flex-shrink: 0;
   align-items: center;
@@ -94,9 +109,13 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  color: #ffffff;
-  font-size: 20px;
+  color: #FAF9F6;
   margin-right: 8px;
+  margin-left: -2px;
+}
+
+.nav-chip-head .nav-chip-icon {
+  font-size: 22px;
 }
 
 .nav-chip-content {
@@ -106,8 +125,4 @@
   white-space: nowrap;
   padding-left: 12px;
   padding-right: 12px;
-}
-
-.k-menu-group {
-  background-color: transparent;
 }

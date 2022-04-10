@@ -24,32 +24,38 @@ public class NavigationData
             new MenuItemModel()
             {
                 Text = "Projects",
-                Url = "/projects"
+                Url = "/projects",
+                TelerikIcon = "csproj"
             },
             new MenuItemModel()
             {
                 Text = "Have an Idea?",
-                Url = "/contracting"
+                Url = "/contracting",
+                TelerikIcon = "exclamation-circle"
             },
             new MenuItemModel()
             {
                 Text = "Contact",
+                TelerikIcon = "question-circle",
                 Items = new List<MenuItemModel>()
                 {
                     new MenuItemModel()
                     {
                         Text = "About Michael",
-                        Url = "/about-me"
+                        Url = "/about-me",
+                        TelerikIcon = "info-circle"
                     },
                     new MenuItemModel()
                     {
                         Text = "Independent Contracting",
-                        Url = "/contracting"
+                        Url = "/contracting",
+                        TelerikIcon = "exclamation-circle"
                     },
                     new MenuItemModel()
                     {
                         Text = "LinkedIn",
-                        Url = "https://www.linkedin.com/in/michael-poust/"
+                        Url = "https://www.linkedin.com/in/michael-poust/",
+                        TelerikIcon = "linkedin-box"
                     },
                     new MenuItemModel()
                     {
@@ -60,7 +66,8 @@ public class NavigationData
             },
             new MenuItemModel()
             {
-                Text = "Resume"
+                Text = "Resume",
+                TelerikIcon = "file-pdf"
                 // TODO: Link to open Resume in new tab
             }
         };

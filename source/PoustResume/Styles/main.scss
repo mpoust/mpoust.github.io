@@ -32,20 +32,21 @@
 }
 
 .desktop-content{
-    padding-top: 4rem;
+    padding-top: 4.5rem;
     margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 //
 // Navigation Bar
 //
 .sticky-nav {
+    background-color: $primary-grey;
     flex: 1;
     clear: both;
     overflow: hidden;
     height: 4rem;
     align-items: center;
-    background-color: $primary-grey;
     position: fixed;
     top: 0;
     width: 100%;
@@ -74,54 +75,65 @@
 //
 // Navigation Chips ref: https://codepen.io/debabrata100/pen/pOLyPW
 //
+.nav-chip-link {
+    color: $app-primary;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 .nav-chip {
+    background-color: $secondary-grey;
+    color: $primary-off-white;
     display: inline-flex;
     flex-direction: row;
-    background-color: $secondary-grey;
     border: none;
     height: 36px;
     outline: none;
     padding-right: 20px;
     font-size: 14px;
-    color: #ffffff;
-    // font color?
     white-space: nowrap;
     align-items: center;
     border-radius: 16px;
     vertical-align: middle;
     text-decoration: none;
     justify-content: center;
-    margin-top: .4rem;
+    margin-top: .5rem;
 }
 
-.nav-chip-head{
+.nav-chip:hover {
+    background-color: $primary-off-white;
+}
+
+    .nav-chip:hover .nav-chip-link{
+        color: $primary-dark;
+    }
+
+.nav-chip-head {
+    background-color: $app-primary;
     display: flex;
     position: relative;
     overflow: hidden;
-    background-color: $app-primary;
     font-size: 1.25rem;
     flex-shrink: 0;
     align-items: center;
-    // user-select
     border-radius: 50%;
     justify-content: center;
     width: 36px;
     height: 36px;
-    color: #ffffff;
-    font-size: 20px;
+    color: #FAF9F6;
     margin-right: 8px;
+    margin-left: -2px;
+}
+
+.nav-chip-head .nav-chip-icon{
+    font-size: 22px;
 }
 
 .nav-chip-content{
     cursor: inherit;
     display: flex;
     align-items: center;
-    // user-select
     white-space: nowrap;
     padding-left: 12px;
     padding-right: 12px;
-}
-
-.k-menu-group{
-    background-color: transparent;
 }
