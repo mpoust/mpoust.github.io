@@ -1,6 +1,8 @@
 ﻿//  Base Styles for importing into other styles 
 // 
 //  NOTE: Inline comments are stripped in the compiled minified file in wwwroot/css
+//
+//  This file should not be compiled in compilerconfig.json - it should be imported into other style files in this directory
 
 $app-primary: #39BCED;
 $app-action: #F28C20;
@@ -10,4 +12,3 @@ $primary-off-white: #FAF9F6;
 $primary-dark: #121212;
 $primary-grey: #424242;
 $secondary-grey: #555555;
-

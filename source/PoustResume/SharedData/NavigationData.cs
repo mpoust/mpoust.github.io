@@ -60,7 +60,8 @@ public class NavigationData
                     new MenuItemModel()
                     {
                         Text = "GitHub",
-                        Url = "https://github.com/mpoust"
+                        Url = "https://github.com/mpoust",
+                        TelerikIcon = "code"
                     }
                 }
             },

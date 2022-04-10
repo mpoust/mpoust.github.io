@@ -1,4 +1,26 @@
-﻿@* Top Navigation Bar used in Desktop screens *@
+﻿@* 
+    Top Navigation Bar used in Desktop screens 
+
+    NOTE: NavMenu has its own styles to assist with the dropdown menu without overriding
+    all dropdown menu styles.
+*@
+
+<style>
+    .k-i-arrow-60-down{
+        color: #39BCED !important;
+        margin-top: .5rem;
+    }
+
+    .k-menu-popup{
+        background-color: transparent !important;
+        border-style: none !important;
+        border-width: 0px !important;
+    }
+
+    .k-menu-group{
+        background-color: transparent !important;
+    }
+</style>
 
 <div class="sticky-nav">
     <div class="nav-logo">
@@ -10,15 +32,7 @@
                 @{
                     <div class="nav-chip">
                         <div class="nav-chip-head">
-                            @if(@item.TelerikIcon != null)
-                            {
-                                <TelerikIcon Icon="@item.TelerikIcon" Class="nav-chip-icon"/>
-                            }
-                            else
-                            {
-                                
-                            }
-                            
+                            <TelerikIcon Icon="@item.TelerikIcon" Class="nav-chip-icon"/>
                         </div>
                         <div class="nav-chip-body">
                             <NavLink href="@item.Url"
