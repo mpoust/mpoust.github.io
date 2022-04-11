@@ -23,7 +23,7 @@ public class NavigationData
         {
             new MenuItemModel()
             {
-                Text = "Projects",
+                Text = "Portfolio",
                 Url = "/projects",
                 TelerikIcon = "csproj"
             },
@@ -47,7 +47,7 @@ public class NavigationData
                     },
                     new MenuItemModel()
                     {
-                        Text = "Independent Contracting",
+                        Text = "Contracting",
                         Url = "/contracting",
                         TelerikIcon = "exclamation-circle"
                     },

@@ -5,7 +5,7 @@
  */
 class Loader extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = `<div class="loader-container">
+        this.innerHTML = `<div id="primary-loader-container" class="loader-container">
             <div class="scene">
                 <div class="plane">
                     <div class="cube cube--0">

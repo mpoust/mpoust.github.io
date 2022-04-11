@@ -1,15 +1,34 @@
 ﻿@*
     Primary Resume Component
 
-    Will contain multiple other components to display a visual representation of my resume. 
+    Will contain multiple other components to display a visual representation of my resume.
 
     Planned to display within a TelerikGrid or TelerikTileLayout
 
     TODO: Use DeviceState to determine layout and orientation of the components
 *@
 
-<h3>ResumeComponent</h3>
+@inject DeviceState DeviceState
 
-@code {
+<style>
+    .k-tilelayout-item-header.k-card-header{
+        display: none;
+    }
+</style>
 
-}
+<TelerikTileLayout Columns="@(DeviceState.GetDeviceState() ? 3 : 2)"
+                   ColumnWidth="@(DeviceState.GetDeviceState() ? "33%" : "50%")"
+                   Width="@(DeviceState.GetDeviceState() ? "70%" : "100%")"
+                   Resizable="false"
+                   Reorderable="false"
+                   Class="primary-tile-layout">
+    <TileLayoutItems>
+        <TileLayoutItem ColSpan="3">
+            <Content>
+                <BasicInfoComponent />
+            </Content>
+        </TileLayoutItem>
+    </TileLayoutItems>
+</TelerikTileLayout>
+
+

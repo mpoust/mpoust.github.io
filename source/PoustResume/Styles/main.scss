@@ -6,9 +6,55 @@
 
 @import 'base.scss';
 
+html, body {
+    background-color: $primary-dark;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100%;
+}
+
+    body #primary-loader-container{
+        background-color: $primary-grey;
+    }
+
+    .primary-tile-layout{
+        margin: auto;
+        background-color: transparent !important;
+    }
+
+    .k-tilelayout-item-body.k-card-body.k-overflow-hidden {
+        background-color: transparent !important;
+    }
+
+    .k-tilelayout-item.k-card {
+        background-color: transparent !important;
+    }
+
+.profile-image.desktop-profile-image,.profile-image.mobile-profile-image{
+    border-radius: 50%;
+    transition: transform .5s;
+}
+    .profile-image:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+.desktop-profile-image {
+    width: 100%;
+    border: 4px dashed $app-primary;
+}
+
+.mobile-profile-image{
+    width: 90%;
+    border: 2.5px dashed $app-primary;
+}
+
 .responsive-image{
     width: 100%;
     height: auto;
+}
+
+.basic-info-comp{
+    margin: auto;
 }
 
 .not-found-ref{
@@ -68,6 +114,14 @@
     margin-right: 2rem;
 }
 
+.nav-logo{
+    transition: transform .5s;
+}
+
+    .nav-logo:hover{
+        transform: rotate(-8deg);
+    }
+
 .sticky-nav .nav-logo{
     float: left;
 }
@@ -102,6 +156,10 @@
 }
 
 
+li.k-drawer-item{
+    transition: all .6s ease;
+}
+
 li.k-drawer-item:hover {
     background-color: $primary-off-white;
 }
@@ -113,7 +171,6 @@ li.k-drawer-item:hover {
     .k-drawer-item:hover .mobile-nav-icons .k-icon {
         color: $primary-grey;
     }
-
 
 //
 // Desktop Navigation Chips ref: https://codepen.io/debabrata100/pen/pOLyPW
@@ -141,6 +198,7 @@ li.k-drawer-item:hover {
     text-decoration: none;
     justify-content: center;
     margin-top: .5rem;
+    transition: all .6s ease;
 }
 
 .nav-chip:hover {
