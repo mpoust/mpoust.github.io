@@ -100,6 +100,13 @@ public class NavigationData
 
         navData.MenuItems.RemoveAll(m => m.Text == "Contact");
 
+        navData.MenuItems.Insert(0, new MenuItemModel()
+        {
+            Text = "Home",
+            Url = "/",
+            TelerikIcon = "home"
+        });
+
         return navData;
     }
 }

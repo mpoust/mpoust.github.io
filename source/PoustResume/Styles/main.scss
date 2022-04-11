@@ -94,10 +94,26 @@
         cursor: pointer;
     }
 
-.mobile-nav-icons {
-    color: $primary-off-white;
-    font-size: 22px;
+.mobile-nav-link {
+    color: $app-primary;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 5px;
 }
+
+
+li.k-drawer-item:hover {
+    background-color: $primary-off-white;
+}
+
+    .k-drawer-item:hover .mobile-nav-link {
+        color: $primary-grey;
+    }
+
+    .k-drawer-item:hover .mobile-nav-icons .k-icon {
+        color: $primary-grey;
+    }
+
 
 //
 // Desktop Navigation Chips ref: https://codepen.io/debabrata100/pen/pOLyPW

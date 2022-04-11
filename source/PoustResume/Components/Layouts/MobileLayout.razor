@@ -13,17 +13,43 @@
         background-color: #424242 !important;
     }
 
+    .k-drawer-items{
+        width: 400px;
+    }
+
+    .mobile-nav-icons .k-icon{
+        color: #FAF9F6;
+        font-size: 22px;
+    }
+
+    .k-drawer-item.k-state-selected{
+        background-color: #FAF9F6;
+    }
+        
+    .k-drawer-item.k-state-selected:hover{
+        background-color: #FAF9F6;
+    }
+
+    .k-drawer-item.k-state-selected .mobile-nav-link{
+        color: #424242;
+    }
+
+    .k-drawer-item.k-state-selected .mobile-nav-icons .k-icon{
+        color: #424242;
+    }
+
 </style>
 
 <TelerikDrawer Data="@MenuItems" Mode="@DrawerMode.Overlay" Position="@DrawerPosition.Right" @ref="@NavDrawerRef">
     <ItemTemplate Context="item">
         @{
-            <div class="mobile-nav-icons" title="@item.ToolTip">
+            <div class="mobile-nav-icons">
                 <TelerikIcon Icon="@item.TelerikIcon" />
             </div>
             <NavLink href="@item.Url"
                  target="@(item.IsInternalPage(item.Url) ? "" : "_blank")"
-                 Match="@(item.Url == "/" ? NavLinkMatch.All : NavLinkMatch.Prefix)">
+                 Match="@(item.Url == "/" ? NavLinkMatch.All : NavLinkMatch.Prefix)"
+                 class="mobile-nav-link">
                 @item.Text
             </NavLink>
         }
@@ -36,7 +62,7 @@
                 </div>
                 <div class="mobile-nav-icon-container">
                     <span onclick="@(() => NavDrawerRef.ToggleAsync())">
-                        <TelerikIcon Icon="menu" Class="mobile-nav-icon" />
+                        <TelerikIcon Icon="menu" />
                     </span>
                 </div>
             </div>

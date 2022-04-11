@@ -86,9 +86,23 @@
   cursor: pointer;
 }
 
-.mobile-nav-icons {
-  color: #FAF9F6;
-  font-size: 22px;
+.mobile-nav-link {
+  color: #39BCED;
+  font-weight: bold;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+li.k-drawer-item:hover {
+  background-color: #FAF9F6;
+}
+
+.k-drawer-item:hover .mobile-nav-link {
+  color: #424242;
+}
+
+.k-drawer-item:hover .mobile-nav-icons .k-icon {
+  color: #424242;
 }
 
 .nav-chip-link {
