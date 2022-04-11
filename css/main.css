@@ -1,9 +1,56 @@
 ﻿/*
     Custom Styles added to PoustResume Blazor WASM
 */
+html, body {
+  background-color: #121212;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+
+body #primary-loader-container {
+  background-color: #424242;
+}
+
+.primary-tile-layout {
+  margin: auto;
+  background-color: transparent !important;
+}
+
+.k-tilelayout-item-body.k-card-body.k-overflow-hidden {
+  background-color: transparent !important;
+}
+
+.k-tilelayout-item.k-card {
+  background-color: transparent !important;
+}
+
+.profile-image.desktop-profile-image, .profile-image.mobile-profile-image {
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+.profile-image:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.desktop-profile-image {
+  width: 100%;
+  border: 4px dashed #39BCED;
+}
+
+.mobile-profile-image {
+  width: 90%;
+  border: 2.5px dashed #39BCED;
+}
+
 .responsive-image {
   width: 100%;
   height: auto;
+}
+
+.basic-info-comp {
+  margin: auto;
 }
 
 .not-found-ref {
@@ -60,6 +107,14 @@
   margin-right: 2rem;
 }
 
+.nav-logo {
+  transition: transform 0.5s;
+}
+
+.nav-logo:hover {
+  transform: rotate(-8deg);
+}
+
 .sticky-nav .nav-logo {
   float: left;
 }
@@ -86,9 +141,27 @@
   cursor: pointer;
 }
 
-.mobile-nav-icons {
-  color: #FAF9F6;
-  font-size: 22px;
+.mobile-nav-link {
+  color: #39BCED;
+  font-weight: bold;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+li.k-drawer-item {
+  transition: all 0.6s ease;
+}
+
+li.k-drawer-item:hover {
+  background-color: #FAF9F6;
+}
+
+.k-drawer-item:hover .mobile-nav-link {
+  color: #424242;
+}
+
+.k-drawer-item:hover .mobile-nav-icons .k-icon {
+  color: #424242;
 }
 
 .nav-chip-link {
@@ -114,6 +187,7 @@
   text-decoration: none;
   justify-content: center;
   margin-top: 0.5rem;
+  transition: all 0.6s ease;
 }
 
 .nav-chip:hover {
