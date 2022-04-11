@@ -1,9 +1,11 @@
 ﻿@*
     Component to display basic info including:
-        - Name
-        - Position
-        - Location
-        - About me blurb (like LinkedIn headline)
+    - Name
+    - Position
+    - Location
+    - About me blurb (like LinkedIn headline)
+
+    TODO: Font size on mobile using device state for class
 *@
 
 @inject DeviceState DeviceState
@@ -17,16 +19,38 @@
         <GridLayoutRow Height="100%"></GridLayoutRow>
     </GridLayoutRows>
     <GridLayoutItems>
-        <GridLayoutItem>
-            <h2>Hi there, I'm Michael Poust</h2>
-            <h4>a Software Engineer based out of Central Pennsylvania.</h4>
-            <p>* Software Engineer * Cloud Architect * Cyber Security Consultant *</p>
+        <GridLayoutItem Class="my-basic-info">
+                <h1>Hi there, I'm Michael Poust</h1>
+                <h3>a Software Engineer based out of Central Pennsylvania.</h3>
+                <ul class="basic-info-links">
+                    <li>
+                        <span class="dot-separator"></span> 
+                    </li>
+                    <li>
+                        <a href="/">Software Engineer</a>
+                    </li>
+                    <li>
+                        <span class="dot-separator"></span> 
+                    </li>
+                    <li>
+                        <a href="/">Cloud Architect</a>
+                    </li>
+                    <li>
+                        <span class="dot-separator"></span> 
+                    </li>
+                    <li>
+                        <a href="/">Cyber Security Consultant</a>
+                    </li>
+                    <li>
+                        <span class="dot-separator"></span> 
+                    </li>
+                </ul>
         </GridLayoutItem>
         <GridLayoutItem>
             <a href="https://linkedin.com/in/michael-poust">
-                <img src="img/mpoust_square.jpg" 
-                 class="profile-image @(DeviceState.GetDeviceState() ? "desktop-profile-image" : "mobile-profile-image")" 
-                 alt="Michael Poust profile image"/>
+                <img src="img/mpoust_square.jpg"
+                     class="profile-image @(DeviceState.GetDeviceState() ? "desktop-profile-image" : "mobile-profile-image")"
+                     alt="Michael Poust profile image" />
             </a>
         </GridLayoutItem>
     </GridLayoutItems>

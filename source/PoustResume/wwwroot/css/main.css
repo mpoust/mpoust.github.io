@@ -12,7 +12,7 @@ body #primary-loader-container {
 }
 
 .primary-tile-layout {
-  margin: auto;
+  margin: 5rem auto auto auto;
   background-color: transparent !important;
 }
 
@@ -51,6 +51,38 @@ body #primary-loader-container {
 
 .basic-info-comp {
   margin: auto;
+}
+
+.basic-info-links li {
+  display: inline;
+}
+
+.basic-info-links li a {
+  color: #FAF9F6;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.5s ease;
+}
+
+.basic-info-links li a:hover {
+  color: #39BCED;
+  text-decoration: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.my-basic-info {
+  margin: auto;
+  color: #FAF9F6;
+}
+
+.dot-separator {
+  background-color: #39BCED;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 2px;
 }
 
 .not-found-ref {

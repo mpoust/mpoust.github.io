@@ -16,10 +16,10 @@ html, body {
         background-color: $primary-grey;
     }
 
-    .primary-tile-layout{
-        margin: auto;
-        background-color: transparent !important;
-    }
+.primary-tile-layout{
+    margin: 5rem auto auto auto;
+    background-color: transparent !important;
+}
 
     .k-tilelayout-item-body.k-card-body.k-overflow-hidden {
         background-color: transparent !important;
@@ -55,6 +55,38 @@ html, body {
 
 .basic-info-comp{
     margin: auto;
+}
+
+.basic-info-links li{
+    display: inline;
+}
+
+    .basic-info-links li a {
+        color: $primary-off-white;
+        text-decoration: none;
+        font-size: 16px;
+        transition: all .5s ease;
+    }
+
+    .basic-info-links li a:hover {
+        color: $app-primary;
+        text-decoration: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+.my-basic-info{
+    margin: auto;
+    color: $primary-off-white;
+}
+
+.dot-separator {
+    background-color: $app-primary;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 2px;
 }
 
 .not-found-ref{
