@@ -1,0 +1,18 @@
+﻿@*
+    Templated component to display as a flip card.
+
+    Provide the Front and Back of the card as RenderFragments
+*@
+
+@inject NavigationManager NavManager
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      @FrontTemplate
+    </div>
+    <div class="flip-card-back" @onclick="@NavigateOnClick">
+      @BackTemplate
+    </div>
+  </div>
+</div>

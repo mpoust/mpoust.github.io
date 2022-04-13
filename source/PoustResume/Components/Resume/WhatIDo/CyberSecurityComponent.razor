@@ -1,12 +1,14 @@
-﻿
-<TelerikCard Class="what-i-do-card">
-    <CardHeader>
-        <CardTitle>Cyber Security</CardTitle>
-    </CardHeader>
-    <CardBody>
-        <h1>BODY CONTENT</h1>
-    </CardBody>
-    <CardFooter>
-        <div class="what-i-do-footer"></div>
-    </CardFooter>
-</TelerikCard>
+﻿<FlipCardComponent NavigationRoute="contracting">
+    <FrontTemplate>
+        <TelerikIcon Icon="lock" Class="flip-card-icon"/>
+        <h4 class="flip-card-title">Cyber Security</h4>
+    </FrontTemplate>
+    <BackTemplate>
+        <div onclick="">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+        </div>
+    </BackTemplate>
+</FlipCardComponent>
+

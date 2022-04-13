@@ -1,12 +1,11 @@
-﻿
-<TelerikCard Class="what-i-do-card">
-    <CardHeader>
-        <CardTitle>Software Engineering</CardTitle>
-    </CardHeader>
-    <CardBody>
-        <h1>BODY CONTENT</h1>
-    </CardBody>
-    <CardFooter>
-        <div class="what-i-do-footer"></div>
-    </CardFooter>
-</TelerikCard>
+﻿<FlipCardComponent NavigationRoute="contracting">
+    <FrontTemplate>
+        <TelerikIcon Icon="code" Class="flip-card-icon"/>
+        <h4 class="flip-card-title">Software Engineering</h4>
+    </FrontTemplate>
+    <BackTemplate>
+        <h1>John Doe</h1>
+        <p>Architect & Engineer</p>
+        <p>We love that guy</p>
+    </BackTemplate>
+</FlipCardComponent>
