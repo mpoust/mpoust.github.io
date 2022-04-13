@@ -67,7 +67,7 @@ body #primary-loader-container {
 .basic-info-links li a:hover {
   color: #39BCED;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -83,6 +83,61 @@ body #primary-loader-container {
   border-radius: 50%;
   display: inline-block;
   margin-bottom: 2px;
+}
+
+#hire-me-btn {
+  background-color: #39BCED;
+  color: #424242;
+  font-weight: 600;
+  font-size: 18px;
+  width: 100px;
+  height: 40px;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+
+#hire-me-btn:hover {
+  background-color: #FAF9F6;
+  color: #121212;
+}
+
+#what-i-do-header {
+  color: #FAF9F6;
+  font-weight: 500;
+  overflow: hidden;
+  margin-left: 0.5em;
+}
+
+#what-i-do-header:after {
+  background-color: #F28C20;
+  content: "";
+  display: inline-block;
+  height: 0.4rem;
+  position: relative;
+  vertical-align: middle;
+  width: 25%;
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+#what-i-do-header:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.what-do-item {
+  margin: auto;
+  width: 90%;
+}
+
+.what-i-do-card {
+  border-bottom-color: #F28C20;
+  border-bottom-width: 100px;
+}
+
+.what-i-do-footer {
+  background-color: #F28C20;
+  height: 10px;
 }
 
 .not-found-ref {

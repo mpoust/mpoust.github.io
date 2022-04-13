@@ -12,6 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-items", "solution-
 		.editorconfig = .editorconfig
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
+		LICENSE = LICENSE
 		nuget.config = nuget.config
 		README.md = README.md
 	EndProjectSection
@@ -24,6 +25,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\codeql-analysis.yml = .github\workflows\codeql-analysis.yml
 		.github\workflows\main.yml = .github\workflows\main.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISSUE_TEMPLATE", "ISSUE_TEMPLATE", "{074B7164-3551-4E5A-ACAA-575AB483FB82}"
+	ProjectSection(SolutionItems) = preProject
+		.github\ISSUE_TEMPLATE\bug_report.md = .github\ISSUE_TEMPLATE\bug_report.md
 	EndProjectSection
 EndProject
 Global
@@ -44,6 +50,7 @@ Global
 		{2786CAF4-2108-4C34-9057-AC984326B31E} = {2C81D546-09FC-4204-BCC9-68C599BDE5E8}
 		{FF044584-6A9C-47AA-BFDC-43F7D1CDDC80} = {CE491026-1B86-44FE-A6B2-0015412F464D}
 		{078DE74C-8B9C-4A3A-8C68-CB950BCCC593} = {FF044584-6A9C-47AA-BFDC-43F7D1CDDC80}
+		{074B7164-3551-4E5A-ACAA-575AB483FB82} = {FF044584-6A9C-47AA-BFDC-43F7D1CDDC80}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0420B451-BD66-4CF1-9350-19769F73920B}

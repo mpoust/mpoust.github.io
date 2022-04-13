@@ -1,0 +1,7 @@
+﻿@inject DeviceState DeviceState
+
+<a href="https://linkedin.com/in/michael-poust">
+    <img src="img/mpoust_square.jpg"
+         class="profile-image @(DeviceState.GetDeviceState() ? "desktop-profile-image" : "mobile-profile-image")"
+         alt="Michael Poust profile image" />
+</a>

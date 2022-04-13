@@ -71,7 +71,7 @@ html, body {
     .basic-info-links li a:hover {
         color: $app-primary;
         text-decoration: none;
-        font-size: 24px;
+        font-size: 18px;
         cursor: pointer;
     }
 
@@ -87,6 +87,61 @@ html, body {
     border-radius: 50%;
     display: inline-block;
     margin-bottom: 2px;
+}
+
+#hire-me-btn{
+    background-color: $app-primary;
+    color: $primary-grey;
+    font-weight: 600;
+    font-size: 18px;
+    width: 100px;
+    height: 40px;
+    transition: all .5s ease;
+    border-radius: 10px;
+}
+
+    #hire-me-btn:hover{
+        background-color: $primary-off-white;
+        color: $primary-dark;
+    }
+
+#what-i-do-header {
+    color: $primary-off-white;
+    font-weight: 500;
+    overflow: hidden;
+    margin-left: .5em;
+}
+
+    #what-i-do-header:after{
+        background-color: $app-action;
+        content: "";
+        display: inline-block;
+        height: .4rem;
+        position: relative;
+        vertical-align: middle;
+        width: 25%;
+        left: .5em;
+        margin-right: -50%;
+    }
+
+    #what-i-do-header:before{
+        right: 0.5em;
+        margin-left: -50%;
+    }
+
+.what-do-item {
+    margin: auto;
+    width: 90%;
+}
+
+.what-i-do-card {
+    border-bottom-color: $app-action;
+    border-bottom-width: 100px;
+}
+
+.what-i-do-footer{
+    background-color: $app-action;
+    height: 10px;
 }
 
 .not-found-ref{

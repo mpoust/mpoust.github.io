@@ -11,7 +11,7 @@
 @inject DeviceState DeviceState
 
 <style>
-    .k-tilelayout-item-header.k-card-header{
+    .k-tilelayout-item-header.k-card-header {
         display: none;
     }
 </style>
@@ -19,6 +19,7 @@
 <TelerikTileLayout Columns="@(DeviceState.GetDeviceState() ? 3 : 2)"
                    ColumnWidth="@(DeviceState.GetDeviceState() ? "33%" : "50%")"
                    Width="@(DeviceState.GetDeviceState() ? "70%" : "100%")"
+                   RowHeight="65vh"
                    Resizable="false"
                    Reorderable="false"
                    Class="primary-tile-layout">
@@ -26,6 +27,31 @@
         <TileLayoutItem ColSpan="3">
             <Content>
                 <BasicInfoComponent />
+            </Content>
+        </TileLayoutItem>
+        <TileLayoutItem ColSpan="3">
+            <Content>
+                <WhatDoComponent />
+            </Content>
+        </TileLayoutItem>
+        <TileLayoutItem ColSpan="2" RowSpan="1">
+            <Content>
+                <ExperienceComponent />
+            </Content>
+        </TileLayoutItem>
+        <TileLayoutItem ColSpan="1" RowSpan="1">
+            <Content>
+                <PrimarySkillsComponent />
+            </Content>
+        </TileLayoutItem>
+        <TileLayoutItem ColSpan="2" RowSpan="1">
+            <Content>
+                <EducationComponent />
+            </Content>
+        </TileLayoutItem>
+        <TileLayoutItem ColSpan="1" RowSpan="1">
+            <Content>
+                <SecondarySkillsComponent />
             </Content>
         </TileLayoutItem>
     </TileLayoutItems>
