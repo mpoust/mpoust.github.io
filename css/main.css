@@ -101,14 +101,14 @@ body #primary-loader-container {
   color: #121212;
 }
 
-#what-i-do-header {
+.section-header {
   color: #FAF9F6;
   font-weight: 500;
   overflow: hidden;
   margin-left: 0.5em;
 }
 
-#what-i-do-header:after {
+.section-header:after {
   background-color: #F28C20;
   content: "";
   display: inline-block;
@@ -120,7 +120,7 @@ body #primary-loader-container {
   margin-right: -50%;
 }
 
-#what-i-do-header:before {
+.section-header:before {
   right: 0.5em;
   margin-left: -50%;
 }
@@ -132,8 +132,8 @@ body #primary-loader-container {
 
 .flip-card {
   background-color: transparent;
-  width: 90%;
-  height: 200px;
+  width: 95%;
+  height: 250px;
   perspective: 1000px;
   /* Remove this if you don't want the 3D effect */
 }
@@ -163,31 +163,45 @@ body #primary-loader-container {
 
 .flip-card-front {
   background-color: #424242;
-  color: black;
 }
 
 .flip-card-back {
   background-color: #F28C20;
-  color: white;
   transform: rotateY(180deg);
   cursor: pointer;
 }
 
 .flip-card-icon {
-  float: left;
-  margin-left: 1rem;
-  margin-top: 1rem;
+  margin: 1rem auto auto auto;
+  display: block;
 }
 
 .flip-card-icon.k-icon {
   color: #39BCED;
-  font-size: 2.75rem;
+  font-size: 4rem;
 }
 
 .flip-card-title {
   color: #FAF9F6;
   font-weight: 600;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
+  display: block;
+}
+
+.flip-card-bk-subtitle, .flip-card-ft-subtitle {
+  font-style: italic;
+  opacity: 0.5;
+  display: block;
+}
+
+.flip-card-ft-subtitle {
+  color: #FAF9F6;
+  margin-top: 4rem;
+}
+
+.flip-card-bk-subtitle {
+  color: #121212;
+  font-weight: 600;
 }
 
 .not-found-ref {
