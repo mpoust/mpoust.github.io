@@ -105,14 +105,14 @@ html, body {
         color: $primary-dark;
     }
 
-#what-i-do-header {
+.section-header {
     color: $primary-off-white;
     font-weight: 500;
     overflow: hidden;
     margin-left: .5em;
 }
 
-    #what-i-do-header:after{
+    .section-header:after {
         background-color: $app-action;
         content: "";
         display: inline-block;
@@ -124,7 +124,7 @@ html, body {
         margin-right: -50%;
     }
 
-    #what-i-do-header:before{
+    .section-header:before {
         right: 0.5em;
         margin-left: -50%;
     }

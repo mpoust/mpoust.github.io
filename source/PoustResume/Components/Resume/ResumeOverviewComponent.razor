@@ -19,17 +19,17 @@
 <TelerikTileLayout Columns="@(DeviceState.GetDeviceState() ? 3 : 2)"
                    ColumnWidth="@(DeviceState.GetDeviceState() ? "33%" : "50%")"
                    Width="@(DeviceState.GetDeviceState() ? "70%" : "100%")"
-                   RowHeight="65vh"
+                   RowHeight="32vh"
                    Resizable="false"
                    Reorderable="false"
                    Class="primary-tile-layout">
     <TileLayoutItems>
-        <TileLayoutItem ColSpan="3">
+        <TileLayoutItem ColSpan="3" RowSpan="2">
             <Content>
                 <BasicInfoComponent />
             </Content>
         </TileLayoutItem>
-        <TileLayoutItem ColSpan="3">
+        <TileLayoutItem ColSpan="3" RowSpan="2">
             <Content>
                 <WhatDoComponent />
             </Content>
@@ -39,9 +39,9 @@
                 <ExperienceComponent />
             </Content>
         </TileLayoutItem>
-        <TileLayoutItem ColSpan="1" RowSpan="1">
+        <TileLayoutItem ColSpan="1" RowSpan="2">
             <Content>
-                <PrimarySkillsComponent />
+                <SkillsComponent />
             </Content>
         </TileLayoutItem>
         <TileLayoutItem ColSpan="2" RowSpan="1">
@@ -49,9 +49,9 @@
                 <EducationComponent />
             </Content>
         </TileLayoutItem>
-        <TileLayoutItem ColSpan="1" RowSpan="1">
+        <TileLayoutItem ColSpan="3">
             <Content>
-                <SecondarySkillsComponent />
+                <ContactMeComponent />
             </Content>
         </TileLayoutItem>
     </TileLayoutItems>
