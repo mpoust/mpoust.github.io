@@ -1,0 +1,17 @@
+﻿@*
+    Template for What I Do / My Services back of card
+*@
+
+<div>
+    <span>@BackText</span>
+    <p class="flip-card-bk-subtitle">Interested? Click me for more information</p>
+</div>
+
+@code {
+    /// <summary>
+    ///     Text to display on the back of the card
+    /// </summary>
+    [Parameter]
+    public string BackText { get; set; }
+
+}

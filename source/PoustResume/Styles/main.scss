@@ -136,8 +136,8 @@ html, body {
 
 .flip-card {
     background-color: transparent;
-    width: 90%;
-    height: 200px;
+    width: 95%;
+    height: 250px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -165,31 +165,45 @@ html, body {
 
 .flip-card-front {
     background-color: $primary-grey;
-    color: black;
 }
 
 .flip-card-back {
     background-color: $app-action;
-    color: white;
     transform: rotateY(180deg);
     cursor: pointer;
 }
 
 .flip-card-icon{
-    float: left;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    margin: 1rem auto auto auto;
+    display: block;
 }
 
     .flip-card-icon.k-icon {
         color: $app-primary;
-        font-size: 2.75rem;
+        font-size: 4rem;
     }
 
 .flip-card-title{
     color: $primary-off-white;
     font-weight: 600;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
+    display: block;
+}
+
+.flip-card-bk-subtitle, .flip-card-ft-subtitle {
+    font-style: italic;
+    opacity: .5;
+    display: block;
+}
+
+.flip-card-ft-subtitle {
+    color: $primary-off-white;
+    margin-top: 4rem;
+}
+
+.flip-card-bk-subtitle{
+    color: $primary-dark;
+    font-weight: 600;
 }
 
 .not-found-ref{

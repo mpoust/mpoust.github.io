@@ -1,14 +1,17 @@
 ﻿<FlipCardComponent NavigationRoute="contracting">
     <FrontTemplate>
-        <TelerikIcon Icon="lock" Class="flip-card-icon"/>
-        <h4 class="flip-card-title">Cyber Security</h4>
+        <WhatIDoFrontTemplate FrontIcon="lock" FrontTitle="Cyber Security"/>
     </FrontTemplate>
     <BackTemplate>
-        <div onclick="">
-            <h1>John Doe</h1>
-            <p>Architect & Engineer</p>
-            <p>We love that guy</p>
-        </div>
+        <WhatIDoBackTemplate BackText="@BackText"/>
     </BackTemplate>
 </FlipCardComponent>
 
+@code{
+    private string BackText = 
+        @"It is no secret that cyber crime is on the rise and exposing your projects to 
+        the open internet compounds your risk. With a background in cyber security,
+        all projects consider security  as a top priority. Direct consultation is 
+        offered to either audit existing policies, procedures, and architecture or 
+        to develop a comprehensive Information Security program for your organization and project. ";
+}

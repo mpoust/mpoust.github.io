@@ -1,11 +1,16 @@
 ﻿<FlipCardComponent NavigationRoute="contracting">
     <FrontTemplate>
-        <TelerikIcon Icon="code" Class="flip-card-icon"/>
-        <h4 class="flip-card-title">Software Engineering</h4>
+        <WhatIDoFrontTemplate FrontIcon="code" FrontTitle="Software Engineering"/>
     </FrontTemplate>
     <BackTemplate>
-        <h1>John Doe</h1>
-        <p>Architect & Engineer</p>
-        <p>We love that guy</p>
+        <WhatIDoBackTemplate BackText="@BackText"/>
     </BackTemplate>
 </FlipCardComponent>
+
+@code{
+    private string BackText = 
+        @"Plan, design, and develop custom software solutions to meet identified requirements. 
+        Already have a team working on a project? Software Engineering services include 
+        integrating with an existing team to augment development efforts or to serve as an 
+        external consultant and assist in getting your project over the finish line.";
+}

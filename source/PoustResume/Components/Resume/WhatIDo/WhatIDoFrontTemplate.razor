@@ -1,0 +1,24 @@
+﻿@*
+    Template for What I Do / My Services front of card
+*@
+
+<div>
+    <TelerikIcon Icon="@FrontIcon" Class="flip-card-icon"/>
+    <h4 class="flip-card-title">@FrontTitle</h4>
+    <span class="flip-card-ft-subtitle">Hover for more information</span>
+</div>
+
+@code {
+    /// <summary>
+    ///     Icon to render as a TelerikIcon on the
+    ///     front of the card.
+    /// </summary>
+    [Parameter]
+    public string FrontIcon { get; set; }
+
+    /// <summary>
+    ///     Text to render on the front of the card
+    /// </summary>
+    [Parameter]
+    public string FrontTitle { get; set; }
+}

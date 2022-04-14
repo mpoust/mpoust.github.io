@@ -1,11 +1,16 @@
 ﻿<FlipCardComponent NavigationRoute="contracting">
     <FrontTemplate>
-        <TelerikIcon Icon="cloud" Class="flip-card-icon"/>
-        <h4 class="flip-card-title">Cloud Architecture</h4>
+        <WhatIDoFrontTemplate FrontIcon="cloud" FrontTitle="Cloud Architecture"/>
     </FrontTemplate>
     <BackTemplate>
-        <h1>John Doe</h1>
-        <p>Architect & Engineer</p>
-        <p>We love that guy</p>
+        <WhatIDoBackTemplate BackText="@BackText"/>
     </BackTemplate>
 </FlipCardComponent>
+
+@code{
+    private string BackText = 
+        @"Specializing in cloud hosted software, these services include architecting custom, 
+        cloud optimized, and high performing software solutions. Additional services offered 
+        include reviewing existing architecture and creating a migration or upgrade strategy 
+        to better meet your needs. ";
+}

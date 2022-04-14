@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 
-namespace PoustResume.Components.Resume.WhatIDo;
+namespace PoustResume.Components;
 
 /// <summary>
 ///     Partial class providing logic for the Flip Card templated component
