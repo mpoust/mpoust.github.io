@@ -16,8 +16,7 @@ public class MenuItemModel
     public string ToolTip { get; set; }
 
     /// <summary>
-    ///     Route to either an internal or external page. Check with <see cref="IsInternalPage(string)"/> to
-    ///     determine the link type.
+    ///     URL to open from the link. Supports internal pages, external pages, and internal documents
     /// </summary>
     public string Url { get; set; }
 
@@ -40,15 +39,10 @@ public class MenuItemModel
     public bool IsSeparator { get; set; } = false;
 
     /// <summary>
-    ///     Determines if the link is internal (in-app) or to an external source.
+    ///     Should this open in a new tab
     /// </summary>
-    /// <param name="url"></param>
-    /// <returns></returns>
-    public bool IsInternalPage(string url)
-    {
-        if (string.IsNullOrEmpty(url)) return false;
-
-        var protocols = new string[] { "//", "http://", "https://" };
-        return !protocols.Any(p => url.StartsWith(p.ToLower()));
-    }
+    /// <remarks>
+    ///     Modified logic to better control the behavior of launching into a new tab
+    /// </remarks>
+    public bool NewTab { get; set; } = false;
 }

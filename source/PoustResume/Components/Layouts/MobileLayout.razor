@@ -47,7 +47,7 @@
                 <TelerikIcon Icon="@item.TelerikIcon" />
             </div>
             <NavLink href="@item.Url"
-                 target="@(item.IsInternalPage(item.Url) ? "" : "_blank")"
+                 target="@(item.NewTab ? "_blank" : "")"
                  Match="@(item.Url == "/" ? NavLinkMatch.All : NavLinkMatch.Prefix)"
                  class="mobile-nav-link">
                 @item.Text

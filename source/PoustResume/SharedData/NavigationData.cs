@@ -55,20 +55,24 @@ public class NavigationData
                     {
                         Text = "LinkedIn",
                         Url = "https://www.linkedin.com/in/michael-poust/",
-                        TelerikIcon = "linkedin-box"
+                        TelerikIcon = "linkedin-box",
+                        NewTab = true
                     },
                     new MenuItemModel()
                     {
                         Text = "GitHub",
                         Url = "https://github.com/mpoust",
-                        TelerikIcon = "code"
+                        TelerikIcon = "code",
+                        NewTab = true
                     }
                 }
             },
             new MenuItemModel()
             {
                 Text = "Resume",
-                TelerikIcon = "file-pdf"
+                TelerikIcon = "file-pdf",
+                Url = "pdf/mpoust-resume_NEEDS-REVISED-2022.pdf",
+                NewTab = true
                 // TODO: Link to open Resume in new tab
             }
         };
