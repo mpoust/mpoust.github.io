@@ -1,0 +1,35 @@
+﻿@*
+    Template for Skills Gauges
+*@
+
+<TelerikArcGauge Width="100%" Height="100%">
+    <ArcGaugeCenterLabel>
+        <Template>
+            @{
+                <h4>@GaugeLabel</h4>
+            }
+        </Template>
+    </ArcGaugeCenterLabel>
+    <ArcGaugeScales>
+        <ArcGaugeScale Min="0" Max="100">
+            <ArcGaugeScaleLabels Visible="true" />
+        </ArcGaugeScale>
+    </ArcGaugeScales>
+    <ArcGaugePointers>
+        <ArcGaugePointer Value="@GaugeValue" />
+    </ArcGaugePointers>
+</TelerikArcGauge>
+
+@code {
+    /// <summary>
+    ///     Value to display in the Gauge
+    /// </summary>
+    [Parameter]
+    public double? GaugeValue { get; set; }
+
+    /// <summary>
+    ///     Label to display in the Gauge
+    /// </summary>
+    [Parameter]
+    public string GaugeLabel { get; set; }
+}

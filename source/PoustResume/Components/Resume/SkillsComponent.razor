@@ -1,12 +1,39 @@
 ﻿@*
-    Component to display primary skills. 
+    Component to display primary skills.
 
     May display with Telerik Radial Guages or something similar
 
     This will have both Primary and Secondary Skills
 *@
 
+@inject DeviceState DeviceState
+
 <h3 class="section-header">Skills</h3>
+
+<TelerikTileLayout Columns="1"
+                   ColumnWidth="100%"
+                   RowHeight="25vh"
+                   Resizable="false"
+                   Reorderable="false"
+                   Class="skills-tile-layout">
+    <TileLayoutItems>
+        <TileLayoutItem>
+            <Content>
+                <SkillGaugeTemplate GaugeValue="40" GaugeLabel="C#" />
+            </Content>
+        </TileLayoutItem>
+        <TileLayoutItem>
+            <Content>
+                <SkillGaugeTemplate GaugeValue="30" GaugeLabel="T-SQL" />
+            </Content>
+        </TileLayoutItem>
+        <TileLayoutItem>
+            <Content>
+                <SkillGaugeTemplate GaugeValue="30" GaugeLabel="Azure" />
+            </Content>
+        </TileLayoutItem>
+    </TileLayoutItems>
+</TelerikTileLayout>
 
 @code {
 

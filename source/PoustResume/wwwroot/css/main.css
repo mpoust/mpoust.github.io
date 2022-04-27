@@ -24,6 +24,10 @@ body #primary-loader-container {
   background-color: transparent !important;
 }
 
+.skills-tile-layout {
+  margin: auto;
+}
+
 .profile-image.desktop-profile-image, .profile-image.mobile-profile-image {
   border-radius: 50%;
   transition: transform 0.5s;
