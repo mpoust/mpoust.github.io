@@ -19,7 +19,7 @@
 <TelerikTileLayout Columns="@(DeviceState.GetDeviceState() ? 3 : 2)"
                    ColumnWidth="@(DeviceState.GetDeviceState() ? "33%" : "50%")"
                    Width="@(DeviceState.GetDeviceState() ? "70%" : "100%")"
-                   RowHeight="32vh"
+                   RowHeight="fit-content"
                    Resizable="false"
                    Reorderable="false"
                    Class="primary-tile-layout">

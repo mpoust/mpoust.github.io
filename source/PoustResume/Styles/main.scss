@@ -90,8 +90,8 @@ html, body {
 }
 
 #hire-me-btn{
-    background-color: $app-primary;
-    color: $primary-grey;
+    background-color: $app-action;
+    color: $primary-dark;
     font-weight: 600;
     font-size: 18px;
     width: 100px;
@@ -110,10 +110,11 @@ html, body {
     font-weight: 500;
     overflow: hidden;
     margin-left: .5em;
+    margin-top: 5em;
 }
 
     .section-header:after {
-        background-color: $app-action;
+        background-color: $app-primary;
         content: "";
         display: inline-block;
         height: .4rem;
@@ -262,14 +263,6 @@ html, body {
     float: right;
     margin-right: 2rem;
 }
-
-.nav-logo{
-    transition: transform .5s;
-}
-
-    .nav-logo:hover{
-        transform: rotate(-8deg);
-    }
 
 .sticky-nav .nav-logo{
     float: left;

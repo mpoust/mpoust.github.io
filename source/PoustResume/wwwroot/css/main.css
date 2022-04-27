@@ -86,8 +86,8 @@ body #primary-loader-container {
 }
 
 #hire-me-btn {
-  background-color: #39BCED;
-  color: #424242;
+  background-color: #F28C20;
+  color: #121212;
   font-weight: 600;
   font-size: 18px;
   width: 100px;
@@ -106,10 +106,11 @@ body #primary-loader-container {
   font-weight: 500;
   overflow: hidden;
   margin-left: 0.5em;
+  margin-top: 5em;
 }
 
 .section-header:after {
-  background-color: #F28C20;
+  background-color: #39BCED;
   content: "";
   display: inline-block;
   height: 0.4rem;
@@ -256,14 +257,6 @@ body #primary-loader-container {
 .sticky-nav .nav-menu {
   float: right;
   margin-right: 2rem;
-}
-
-.nav-logo {
-  transition: transform 0.5s;
-}
-
-.nav-logo:hover {
-  transform: rotate(-8deg);
 }
 
 .sticky-nav .nav-logo {
