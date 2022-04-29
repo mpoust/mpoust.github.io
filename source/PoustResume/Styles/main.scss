@@ -33,6 +33,10 @@ html, body {
     margin: auto;
 }
 
+.skill-gauge{
+    /*width: fit-content;*/
+}
+
 .profile-image.desktop-profile-image, .profile-image.mobile-profile-image {
     border-radius: 50%;
     transition: transform .5s;
@@ -223,6 +227,7 @@ html, body {
 
 .main{
     flex: 1;
+    position: relative;
 }
 
 .page{
@@ -231,10 +236,12 @@ html, body {
     flex-direction: column;
 }
 
-.desktop-content{
+.desktop-content {
     padding-top: 4.5rem;
+    padding-bottom: 3rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    min-height: 100vh;
 }
 
 .mobile-content {
@@ -383,4 +390,19 @@ li.k-drawer-item:hover {
     white-space: nowrap;
     padding-left: 12px;
     padding-right: 12px;
+}
+
+///
+/// Footer
+///
+.primary-footer {
+    background-color: $secondary-grey;
+    clear: both;
+    overflow: auto;
+    height: 3rem;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
 }

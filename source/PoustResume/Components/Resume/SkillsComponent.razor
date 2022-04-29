@@ -10,24 +10,26 @@
 
 <h3 class="section-header">Skills</h3>
 
+
+
 <TelerikTileLayout Columns="1"
-                   ColumnWidth="100%"
+                   ColumnWidth="fit-content"
                    RowHeight="25vh"
                    Resizable="false"
                    Reorderable="false"
                    Class="skills-tile-layout">
     <TileLayoutItems>
-        <TileLayoutItem>
+        <TileLayoutItem ColSpan="1" RowSpan="1">
             <Content>
                 <SkillGaugeTemplate GaugeValue="40" GaugeLabel="C#" />
             </Content>
         </TileLayoutItem>
-        <TileLayoutItem>
+        <TileLayoutItem ColSpan="1" RowSpan="1">
             <Content>
                 <SkillGaugeTemplate GaugeValue="30" GaugeLabel="T-SQL" />
             </Content>
         </TileLayoutItem>
-        <TileLayoutItem>
+        <TileLayoutItem ColSpan="1" RowSpan="1">
             <Content>
                 <SkillGaugeTemplate GaugeValue="30" GaugeLabel="Azure" />
             </Content>

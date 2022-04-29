@@ -1,0 +1,14 @@
+﻿@*
+    Form for contacting me and sending an email
+*@
+
+<TelerikForm Model="@FormModel">
+    <FormValidation>
+        <DataAnnotationsValidator />
+    </FormValidation>
+</TelerikForm>
+
+@code {
+    public ContactMeFormModel FormModel = new ContactMeFormModel();
+
+}
