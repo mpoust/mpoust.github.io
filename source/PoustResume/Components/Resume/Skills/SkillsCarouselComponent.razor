@@ -1,0 +1,44 @@
+﻿@*
+    Carousel to display skills
+*@
+
+<TelerikCarousel Data="@CarouselData" Height="250px" Width="250px">
+    <Template>
+        <SkillGaugeTemplate GaugeValue="@(context.SkillLevel)" GaugeLabel="@(context.Title)" />
+    </Template>
+</TelerikCarousel>
+
+@code {
+    /// <summary>
+    ///     Data to display in the carousel
+    /// </summary>
+    public IEnumerable<SkillCarouselModel> CarouselData { get; set; }
+
+    /// <summary>
+    ///     Override of component initialization
+    /// </summary>
+    protected override void OnInitialized()
+    {
+        CarouselData = new List<SkillCarouselModel>()
+        {
+            new SkillCarouselModel()
+            {
+                Id = 1,
+                Title = "C#",
+                SkillLevel = 40
+            },
+            new SkillCarouselModel()
+            {
+                Id = 2,
+                Title = "T-SQL",
+                SkillLevel = 30
+            },
+            new SkillCarouselModel()
+            {
+                Id = 3,
+                Title = "Azure",
+                SkillLevel = 30
+            }
+        };
+    }
+}
