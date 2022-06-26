@@ -3,3 +3,5 @@
 Michael Poust's Resume / Portfolio GitHub Pages site. Built with Blazor WebAssembly (WASM) and leveraging Telerik for Blazor UI Controls
 
 TODO: 4/8/2022
+
+Redo using learned CSS and Sass techniques
